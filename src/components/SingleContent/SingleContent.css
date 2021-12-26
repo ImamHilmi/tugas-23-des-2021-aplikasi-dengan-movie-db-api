@@ -1,0 +1,45 @@
+
+
+    .media {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        padding: 5px;
+        margin: 10px 4px;
+        background-color: #272e49;
+        color: #f4f4f4;
+        border-radius: 15px;
+        position: relative;
+    }
+
+    .media:hover {
+        background-color: #f4f4f4;
+        color: #222222;
+    }
+
+    @media (max-width: 550px) {
+        .media {
+            width: 40%;
+            margin-bottom: 15px;
+        }
+    }
+
+    .poster {
+        border-radius: 15px;
+    }
+
+    .title {
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        padding: 8px 0;
+    }
+
+    .subTitle {
+        display: flex;
+        justify-content:space-around;
+        padding-bottom: 3px;
+        font-size: 15px;
+        padding: 0 2px;
+        flex-direction: row;
+    }

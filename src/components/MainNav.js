@@ -25,26 +25,29 @@ export default function SimpleBottomNavigation() {
     }, [value, navigate])
 
   return (
-    <Box sx={{ 
-        width: "100%",
-        position: "fixed",
-        bottom: 0,
-        boxShadow: 3,
-        // bgcolor: 'background.paper',
-        zIndex: 100,
-     }}>
-      <BottomNavigation
-        showLabels
-        value={value}
-        onChange={(event, newValue) => {
-          setValue(newValue);
-        }}
-      >
-        <BottomNavigationAction style={{color:"#222942"}}  label="Trending" icon={<TrendingUpIcon />} />
-        <BottomNavigationAction style={{color:"#222942"}}  label="Movies" icon={<MovieIcon />} />
-        <BottomNavigationAction style={{color:"#222942"}}  label="TV Series" icon={<ComputerIcon />} />
-        <BottomNavigationAction style={{color:"#222942"}}  label="Search" icon={<SearchIcon />} />
-      </BottomNavigation>
-    </Box>
+      <>
+        <Box sx={{ 
+            width: "100%",
+            position: "fixed",
+            bottom: 0,
+            boxShadow: 3,
+            // backgroundColor: "#333333",
+            zIndex: 100,
+        }}>
+        <BottomNavigation
+            showLabels
+            value={value}
+            style={{backgroundColor: "#222942"}}
+            onChange={(event, newValue) => {
+            setValue(newValue);
+            }}
+        >
+            <BottomNavigationAction style={{color:"#f4f4f4"}} label="Trending" icon={<TrendingUpIcon />} />
+            <BottomNavigationAction style={{color:"#f4f4f4"}} label="Movies" icon={<MovieIcon />} />
+            <BottomNavigationAction style={{color:"#f4f4f4"}} label="TV Series" icon={<ComputerIcon />} />
+            <BottomNavigationAction style={{color:"#f4f4f4"}} label="Search" icon={<SearchIcon />} />
+        </BottomNavigation>
+        </Box>
+    </>
   );
 }
