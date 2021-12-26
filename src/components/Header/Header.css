@@ -1,0 +1,14 @@
+
+    .header {
+        width: 100%;
+        cursor: pointer;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        background-color: #222942;
+        font-size: 4vw;
+        padding-bottom: 15px;
+        box-shadow: 0 1px 5px black;
+        color: white;
+        z-index: 100;
+    }
