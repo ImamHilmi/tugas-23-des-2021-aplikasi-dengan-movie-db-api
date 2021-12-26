@@ -3,9 +3,12 @@ import Header from '../src/components/Header/Header'
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Header />
-    </div>
+      <div className="App">
+        <h3>isi content</h3>
+      </div>
+    </>
   );
 }
 
