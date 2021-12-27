@@ -1,4 +1,7 @@
 
+  * {
+    scroll-behavior: smooth;
+  }
 
   .App {
     min-height: 100vh;
@@ -10,5 +13,22 @@
   @media (min-width: 700px) {
     .App {
       padding-top: 110px;
+    }
+  }
+
+  .pageTitle {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    font-size: 3vw;
+    padding: 5px;
+    margin-bottom: 15px;
+    border-radius: 50px;
+    color: #fff;
+  }
+
+  @media (max-width: 900px) {
+    .pageTitle {
+      font-size: 6vw;
     }
   }

@@ -1,6 +1,6 @@
 import './App.css';
 import Header from '../src/components/Header/Header'
-import { BrowserRouter, Routes, Route, } from "react-router-dom"
+import { Routes, Route, } from "react-router-dom"
 import SimpleBottomNavigation from '../src/components/MainNav'
 import { Container } from '@mui/material';
 import Trending from '../src/components/Pages/Trending/Trending'

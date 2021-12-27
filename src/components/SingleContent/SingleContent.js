@@ -1,5 +1,7 @@
 import React from 'react'
 import { img_300, unavailable } from '../../config/config'
+import Badge from '@mui/material/Badge';
+import Stack from '@mui/material/Stack';
 import './SingleContent.css'
 
 const SingleContent = ({
@@ -14,6 +16,9 @@ const SingleContent = ({
         <>
             <div className="media">
                 {/* <span><br />{ title }<br /><br /></span> */}
+                <Stack spacing={2} direction="row">
+                    <Badge badgeContent={vote_average} color={vote_average > 7 ? "primary" : "secondary"} />
+                </Stack>
                 <img className="poster" src={poster ? `${img_300}/${poster}` : unavailable} alt={title} />
                 <b className="title">
                     {title}
