@@ -4,6 +4,7 @@ import Genres from '../../Genres';
 import CustomPagination from '../../Pagination/CustomPagination';
 import SingleContent from '../../SingleContent/SingleContent';
 import useGenre from "../../../hooks/useGenre";
+import '../Trending/Trending.css'
 
 const Movies = () => {
     const [genres, setGenres] = useState([]);
