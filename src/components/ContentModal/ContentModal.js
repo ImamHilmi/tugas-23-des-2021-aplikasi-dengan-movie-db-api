@@ -7,7 +7,7 @@ import Button from '@mui/material/Button';
 import axios from 'axios';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import { img_500, unavailable, unavailableLandscape } from "../../config/config";
-import Carousel from '../Carousel/Carousel';
+// import Carousel from '../Carousel/Carousel';
 import './ContentModal.css'
 
 const style = {
@@ -80,8 +80,6 @@ export default function ContentModal({ children, media_type, id }) {
             { children }
         </div>
         <Modal
-            aria-labelledby="transition-modal-title"
-            aria-describedby="transition-modal-description"
             open={open}
             onClose={handleClose}
             closeAfterTransition
@@ -131,9 +129,9 @@ export default function ContentModal({ children, media_type, id }) {
                                     {content.overview}
                                 </span>
 
-                                <div>
+                                {/* <div>
                                     <Carousel id={id} media_type={media_type} />
-                                </div>
+                                </div> */}
 
                                 <Button
                                     variant="contained"

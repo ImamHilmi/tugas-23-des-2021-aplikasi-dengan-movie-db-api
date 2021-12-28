@@ -25,12 +25,12 @@
         height: 100%;
         width: 100%;
         overflow-y: scroll;
-        /* scrollbar-width: none; */
+        scrollbar-width: none;
       }
       
-      /* .ContentModal::-webkit-scrollbar {
+      .ContentModal::-webkit-scrollbar {
         display: none;
-      } */
+      }
       
       .ContentModal__about {
         padding: 10px;
