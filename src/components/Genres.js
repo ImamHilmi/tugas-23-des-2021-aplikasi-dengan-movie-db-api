@@ -1,5 +1,5 @@
 import Chip from '@mui/material/Chip';
-import { blue, indigo, purple } from '@mui/material/colors';
+import { blue, indigo } from '@mui/material/colors';
 import { ThemeProvider } from '@mui/styles';
 import { createTheme } from '@mui/system';
 import Axios from 'axios';

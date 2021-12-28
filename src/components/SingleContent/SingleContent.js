@@ -3,6 +3,7 @@ import { img_300, unavailable } from '../../config/config'
 import Badge from '@mui/material/Badge';
 import Stack from '@mui/material/Stack';
 import './SingleContent.css'
+import ContentModal from '../ContentModal/ContentModal';
 
 const SingleContent = ({
     id,
@@ -14,7 +15,7 @@ const SingleContent = ({
 }) => {
     return (
         <>
-            <div className="media">
+            <ContentModal media_type={media_type} id={id} >
                 {/* <span><br />{ title }<br /><br /></span> */}
                 <Stack spacing={2} direction="row">
                     <Badge badgeContent={vote_average} color={vote_average > 7 ? "primary" : "secondary"} />
@@ -31,7 +32,7 @@ const SingleContent = ({
                         {date}
                     </span>
                 </div>
-            </div>
+            </ContentModal>
         </>
     )
 }
