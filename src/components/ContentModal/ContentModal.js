@@ -9,6 +9,7 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import { img_500, unavailable, unavailableLandscape } from "../../config/config";
 // import Carousel from '../Carousel/Carousel';
 import './ContentModal.css'
+import '../SingleContent/SingleContent.css'
 
 const style = {
 //   position: 'absolute',
@@ -29,7 +30,6 @@ const style = {
     color: "#fff",
     boxShadow: 15,
     p: 4,
-    margin: 2,
     display: "flex",
     alignItems: "center",
     justifyContent: "center",

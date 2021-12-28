@@ -78,7 +78,10 @@ const Search = () => {
                         setType(newValue);
                         setPage(1);
                     }}
-                    style={{ paddingBottom: 5 }}
+                    style={{ 
+                        paddingBottom: 5,
+                        // width: "1000px",
+                     }}
                     aria-label="disabled tabs example"
                 >
                     <Tab style={{ width: "50%" }} label="Search Movies" />
