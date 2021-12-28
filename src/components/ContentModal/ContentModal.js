@@ -23,7 +23,7 @@ const style = {
 //   p: 4,
 
     width: "90%",
-    height: "80%",
+    height: "85%",
     backgroundColor: "#39445a",
     border: "1px solid #282c34",
     borderRadius: 10,
@@ -89,7 +89,7 @@ export default function ContentModal({ children, media_type, id }) {
             }}
         >
             <Fade in={open}>
-                <Box sx={style}>
+                <Box sx={style} className="modal-box">
                 {content && (
                     <div>
                         <div className="ContentModal">
