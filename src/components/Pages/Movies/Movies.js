@@ -16,7 +16,9 @@ const Movies = () => {
 
     const fetchMovies = async () => {
 
-        const { data } = await Axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=${page}&with_genres=${genreforURL}`);
+        // const { data } = await Axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=${page}&with_genres=${genreforURL}`);
+
+        const { data } = await Axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=da7c98e17d255a7057d751c52dc6817d&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=${page}&with_genres=${genreforURL}`);
 
         // const { data } = await Axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=08957f87ddd3813cba7beff2d3ffee88&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&with_watch_monetization_types=flatrate&page=${page}&with_genres=$
         

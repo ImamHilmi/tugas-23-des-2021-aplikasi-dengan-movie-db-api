@@ -15,8 +15,11 @@ const Trending = () => {
         // const {data} = await axios.get(`
         // https://api.themoviedb.org/3/trending/all/day?api_key=08957f87ddd3813cba7beff2d3ffee88&page=${page}`);
 
+        // const {data} = await axios.get(`
+        // https://api.themoviedb.org/3/trending/all/day?api_key=${process.env.REACT_APP_API_KEY}&page=${page}`);
+
         const {data} = await axios.get(`
-        https://api.themoviedb.org/3/trending/all/day?api_key=${process.env.REACT_APP_API_KEY}&page=${page}`);
+        https://api.themoviedb.org/3/trending/all/day?api_key=da7c98e17d255a7057d751c52dc6817d&page=${page}`);
 
 
         // const { data } = await axios.get(`https://api.themoviedb.org/3/trending/all/week?api_key=${process.env.REACT_APP_API_KEY}`);

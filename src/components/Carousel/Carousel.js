@@ -34,8 +34,12 @@ const Carousel = ({ media_type, id }) => {
       };
 
       const fetchCredits = async () => {
+        // const { data } = await axios.get(
+        //   `https://api.themoviedb.org/3/${media_type}/${id}/credits?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`
+        // );
+
         const { data } = await axios.get(
-          `https://api.themoviedb.org/3/${media_type}/${id}/credits?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`
+          `https://api.themoviedb.org/3/${media_type}/${id}/credits?api_key=da7c98e17d255a7057d751c52dc6817d&language=en-US`
         );
         setCredits(data.cast);
       };

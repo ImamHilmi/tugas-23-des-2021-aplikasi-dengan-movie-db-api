@@ -42,7 +42,9 @@ const Genres = ({
     const fetchGenres = async () => {
         // const { data } = await Axios.get(`https://api.themoviedb.org/3/genre/${type}/list?api_key=08957f87ddd3813cba7beff2d3ffee88&language=en-US`);
 
-        const { data } = await Axios.get(`https://api.themoviedb.org/3/genre/${type}/list?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`);
+        // const { data } = await Axios.get(`https://api.themoviedb.org/3/genre/${type}/list?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`);
+
+        const { data } = await Axios.get(`https://api.themoviedb.org/3/genre/${type}/list?api_key=da7c98e17d255a7057d751c52dc6817d&language=en-US`);
 
         // setGenres=(data.genres);
         setGenres(data.genres);
