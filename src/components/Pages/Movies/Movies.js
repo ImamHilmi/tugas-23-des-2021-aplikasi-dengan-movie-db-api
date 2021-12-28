@@ -62,7 +62,7 @@ const Movies = () => {
                             poster={card.poster_path} 
                             title={card.title || card.name} 
                             date={card.first_air_date || card.release_date}
-                            media_type="Movie"
+                            media_type="movie"
                             vote_average={card.vote_average}
                         />
                     )
